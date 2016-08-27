@@ -1,0 +1,55 @@
+@import mixin-var.sass
+
+.theme
+  background-image: url('../img-compressed/bridge.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-attachment: fixed
+  min-height: 440px
+  display: flex
+  align-items: center
+
+  .wrap
+    margin: 0 auto
+    width: 100%
+    max-width: 1200px
+    padding-left: 15px
+    padding-right: 15px
+    padding-top: 1px
+    text-align: center
+
+
+    h1
+      color: white
+      font-family: $roboto
+      font-size: 40px
+      font-weight: 300
+      margin-bottom: 10px
+
+    button:nth-child(2)
+      margin-right: 9px
+      +button()
+      background-color: $button-green
+      box-shadow: 0 15px 10px -5px fade-out(black, 0.3)
+      transition: all 100ms linear
+      &:hover
+        transform: translate(0, -10px)
+        box-shadow: 0 35px 15px -15px fade-out(black, 0.6)
+    button:last-child
+      margin-right: 9px
+      +button()
+      background-color: $price-green
+      box-shadow: 0 15px 10px -5px fade-out(black, 0.3)
+      transition: all 100ms linear
+      margin-top: 15px
+      &:hover
+        transform: translate(0, -10px)
+        box-shadow: 0 35px 15px -15px fade-out(black, 0.6)
+
+
+  @media #{$desktop}
+    .wrap
+      text-align: initial
+      h1
+        font-size: 60px

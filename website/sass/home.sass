@@ -1,0 +1,73 @@
+// Section Home
+@import mixin-var.sass
+
+.home
+  height: calc(100vh - 70px)
+  width: 100%
+  background: linear-gradient(transparent 50%, black), url('../img/city.jpg')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+  position: relative
+
+  .wrap
+    width: 100%
+    max-width: 1200px
+    padding-left: 15px
+    padding-right: 15px
+    margin: 0 auto
+    font-family: $roboto
+    color: white
+    padding-top: 234px
+    h2
+      margin: 0
+      font-weight: bold
+      text-align: center
+      font-size: 40px
+      span
+        color: $link-green
+        font-weight: 500
+        font-size: 30px
+
+    .arrow-container
+      margin-top: -40px
+      position: absolute
+      width: 100%
+      left: 0
+
+
+      .arrow-left
+        cursor: pointer
+        width: 35px
+        height: 35px
+        background-color: fade-out(white, 0.5)
+        border-radius: 50%
+        float: left
+        margin-left: 25px
+
+      .arrow-right
+        cursor: pointer
+        width: 35px
+        height: 35px
+        background-color: fade-out(white, 0.5)
+        border-radius: 50%
+        float: right
+        margin-right: 25px
+
+    @media (min-width: 1365px )
+      h2
+        display: inline-block
+        text-align: initial
+
+    @media #{$desktop}
+      h2
+        font-size: 60px
+        line-height: 48px
+        span
+          font-size: 40px
+          line-height: 40px
+
+    @media (min-width: 590px)
+      .arrow-container
+        margin-top: 31px

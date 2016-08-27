@@ -1,0 +1,41 @@
+@import mixin-var.sass
+
+footer
+  background-color: $main-dark
+  position: relative
+  min-height: 133px
+  .wrap
+    position: absolute
+    +wrap()
+    +clearfix()
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+
+    .logo
+      color: white
+      font-family: $roboto
+      font-size: 24px
+      font-weight: 500
+      line-height: 20px
+      img
+        margin-right: 12px
+
+    .info
+      margin-top: 20px
+      width: 100%
+      max-width: 469px
+      color: #989898
+      font-family: $roboto
+      font-size: 16px
+      font-weight: 500
+
+@media #{$desktop}
+  footer
+    .wrap
+      .logo
+        float: left
+      .info
+        float: right
+        margin-top: 0 

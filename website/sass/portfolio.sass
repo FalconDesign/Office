@@ -1,0 +1,65 @@
+@import mixin-var.sass
+
+.portfolio
+  min-height: 780px
+  background-color: $dark-section
+  padding-bottom: 20px
+
+  .wrap
+    margin: 0 auto
+    width: 100%
+    max-width: 1200px
+    padding-left: 15px
+    padding-right: 15px
+    padding-top: 1px
+    text-align: center
+
+    h1
+      margin-top: 62px
+      margin-bottom: 20px
+      color: white
+      font-family: $roboto
+      font-size: 36px
+      font-weight: 300
+
+    .buttons
+      button
+        +button-squared()
+
+    .photos
+      margin: 40px auto 0 auto
+      width: 100%
+      max-width: 938px
+      min-height: 462px
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+
+      figure
+        height: 224px !important
+        margin: 0
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 14px
+
+        figcaption
+          position: absolute
+          width: 170px
+          height: 170px
+          background-color: fade-out(gray, 0.7)
+          +thumbnail()
+
+    h3
+      color: white
+      font-family: $roboto
+      font-size: 16px
+      font-weight: 300
+      margin-top: 47px
+
+
+  @media (min-width: 680px)
+    .wrap
+      .photos
+        justify-content: space-between

@@ -1,0 +1,18 @@
+.usual {
+  background-color: #45372f;
+  display: flex;
+  align-items: center;
+  min-height: 440px; }
+  .usual .wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 15px; }
+    .usual .wrap h1 {
+      margin: 0; }
+  @media (min-width: 768px) {
+    .usual .wrap {
+      text-align: initial; } }

@@ -1,0 +1,52 @@
+@import mixin-var.sass
+
+.pricing
+  background: url('../img-compressed/mount.jpg') no-repeat center/cover
+  background-attachment: fixed
+.team
+  background: url('../img-compressed/sky.jpg') no-repeat center/cover
+  background-attachment: fixed
+.great
+  background: url('../img-compressed/whale.jpg') no-repeat center/cover
+  background-attachment: fixed
+
+.connect
+  background: url('../img-compressed/city.jpg') no-repeat center/cover
+  background-attachment: fixed
+  .social
+    margin: 30px auto 0 auto
+    width: 100%
+    max-width: 490px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  @media #{$desktop}
+    .social
+      margin: 30px 0 0 0 
+
+
+.pricing,
+.team
+  .wrap
+    color: white
+    h1
+      font-family: $roboto
+      font-size: 60px
+      font-weight: 300
+
+    span
+      font-size: 40px
+      font-weight: 500
+
+.great,
+.connect
+  .wrap
+    color: white
+    font-family: $roboto
+    font-size: 30px
+    font-weight: 500
+    text-transform: uppercase
+    padding-left: 15px
+    padding-right: 15px
+    span
+      font-weight: 300

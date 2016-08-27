@@ -1,0 +1,104 @@
+.usual {
+  background-color: #45372f;
+  display: flex;
+  align-items: center;
+  min-height: 440px; }
+  .usual .wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 15px; }
+    .usual .wrap h1 {
+      margin: 0; }
+  @media (min-width: 768px) {
+    .usual .wrap {
+      text-align: initial; } }
+
+.dark {
+  color: #b6b6b6;
+  background-color: #2c3035; }
+
+.light {
+  color: #5c5c5c;
+  background-color: #f4f4f4; }
+
+.about {
+  background-color: #282a2e; }
+  .about .wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px; }
+    .about .wrap h1 {
+      text-align: center;
+      margin-top: 52px;
+      margin-bottom: 20px;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-size: 36px;
+      font-weight: 300; }
+    .about .wrap .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: center;
+      color: white;
+      padding-bottom: 80px; }
+      .about .wrap .about-container figure {
+        width: 100%;
+        max-width: 210px; }
+        .about .wrap .about-container figure figcaption h3 span {
+          font-family: "Roboto", sans-serif;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 20px; }
+        .about .wrap .about-container figure figcaption span {
+          font-family: "Arial", sans-serif;
+          color: #acacac; }
+    .about .wrap .skills {
+      padding-top: 6.5px;
+      padding-bottom: 6.5px;
+      position: relative;
+      text-align: center; }
+      .about .wrap .skills .line {
+        height: 2px;
+        background-color: #424242;
+        display: none; }
+      .about .wrap .skills span {
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #282a2e;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: uppercase; }
+    .about .wrap .skill-container {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-bottom: 80px; }
+      .about .wrap .skill-container img {
+        margin-top: 15px; }
+
+@media (min-width: 875px) {
+  .about .wrap .about-container {
+    justify-content: space-between; }
+    .about .wrap .about-container figure {
+      margin-left: 0;
+      margin-right: 0; }
+  .about .wrap .skills .line {
+    display: block; }
+  .about .wrap .skills span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .about .wrap .skill-container {
+    justify-content: space-between; } }

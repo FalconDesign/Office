@@ -1,0 +1,75 @@
+@import mixin-var.sass
+
+.about
+  +dark-section()
+  .wrap
+    +wrap()
+    h1
+      +h1()
+    .about-container
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      text-align: center
+      color: white
+      padding-bottom: 80px
+      figure
+        width: 100%
+        max-width: 210px
+        figcaption
+          h3
+            span
+              font-family: $roboto
+              font-size: 16px
+              font-weight: 300
+              line-height: 20px
+          span
+            font-family: $arial
+            color: #acacac
+
+    .skills
+      padding-top: 6.5px
+      padding-bottom: 6.5px
+      position: relative
+      text-align: center
+      .line
+        height: 2px
+        background-color: #424242
+        display: none
+      span
+        padding-left: 40px
+        padding-right: 40px
+        background-color: $dark-section
+        color: white
+        font-family: $roboto
+        font-size: 18px
+        font-weight: 500
+        line-height: 20px
+        text-transform: uppercase
+
+    .skill-container
+      margin-top: 60px
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+      padding-bottom: 80px
+      img
+        margin-top: 15px
+
+@media (min-width: 875px)
+  .about
+    .wrap
+      .about-container
+        justify-content: space-between
+        figure
+          margin-left: 0
+          margin-right: 0
+      .skills
+        .line
+          display: block
+        span
+          position: absolute
+          left: 50%
+          transform: translate(-50%, -50%)
+      .skill-container
+        justify-content: space-between

@@ -1,0 +1,88 @@
+@import mixin-var.sass
+
+.contact
+  +dark-section()
+  padding-bottom: 20px
+  .wrap
+    +wrap()
+    h1
+      +h1()
+      margin-bottom: 76px
+    .contact-container
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      text-align: center
+      .form-container
+        padding-bottom: 35px
+        h2
+          line-height: 40px
+          margin: 0 0 16px 0
+          color: white
+          border-bottom: 2px solid #424242
+        form
+          width: 100%
+          max-width: 671px
+
+          input[type="text"],
+          input[type='email'],
+          textarea
+            background-color: #222327
+            border: 0
+            padding-left: 15px
+            color: white
+            fon-family: $roboto
+            line-height: 25px
+            &:focus
+              outline: 0
+
+          input[type="text"]
+            float: left
+          input[type="email"]
+            float: right
+          input
+            margin-top: 16px
+            width: 100%
+            height: 34px
+          textarea
+            width: 100%
+            height: 141px
+            margin-top: 16px
+            resize: none
+          button
+            +button-squared()
+            background-color: $price-green
+            &:hover
+              background-color: fade-out($price-green, 0.5)
+
+      .more-info
+        width: 100%
+        color: #989898
+        font-family: $roboto
+        font-size: 16px
+        line-height: 30px
+        h2
+          line-height: 40px
+          margin: 0 0 16px 0
+          color: white
+          border-bottom: 2px solid #424242
+        button
+          +button-squared()
+          background-color: $price-green
+          &:hover
+            background-color: fade-out($price-green, 0.5)
+
+
+@media #{$desktop}
+  .contact
+    padding-bottom: 100px
+    .wrap
+      .contact-container
+        text-align: initial
+        .form-container
+          form
+            input
+              max-width: 327px
+              margin-top: 0
+        .more-info
+          width: initial

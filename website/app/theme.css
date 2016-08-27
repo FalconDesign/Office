@@ -1,0 +1,90 @@
+.usual {
+  background-color: #45372f;
+  display: flex;
+  align-items: center;
+  min-height: 440px; }
+  .usual .wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 15px; }
+    .usual .wrap h1 {
+      margin: 0; }
+  @media (min-width: 768px) {
+    .usual .wrap {
+      text-align: initial; } }
+
+.dark {
+  color: #b6b6b6;
+  background-color: #2c3035; }
+
+.light {
+  color: #5c5c5c;
+  background-color: #f4f4f4; }
+
+.theme {
+  background-image: url("../img-compressed/bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 440px;
+  display: flex;
+  align-items: center; }
+  .theme .wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    text-align: center; }
+    .theme .wrap h1 {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-size: 40px;
+      font-weight: 300;
+      margin-bottom: 10px; }
+    .theme .wrap button:nth-child(2) {
+      margin-right: 9px;
+      width: 131px;
+      height: 43px;
+      border-radius: 5px;
+      border: 0;
+      color: white;
+      cursor: pointer;
+      margin-left: -4px;
+      background-color: #b0cd3b;
+      box-shadow: 0 15px 10px -5px rgba(0, 0, 0, 0.7);
+      transition: all 100ms linear; }
+      .theme .wrap button:nth-child(2):focus {
+        outline: 0; }
+      .theme .wrap button:nth-child(2):hover {
+        transform: translate(0, -10px);
+        box-shadow: 0 35px 15px -15px rgba(0, 0, 0, 0.4); }
+    .theme .wrap button:last-child {
+      margin-right: 9px;
+      width: 131px;
+      height: 43px;
+      border-radius: 5px;
+      border: 0;
+      color: white;
+      cursor: pointer;
+      margin-left: -4px;
+      background-color: #1bbc9d;
+      box-shadow: 0 15px 10px -5px rgba(0, 0, 0, 0.7);
+      transition: all 100ms linear;
+      margin-top: 15px; }
+      .theme .wrap button:last-child:focus {
+        outline: 0; }
+      .theme .wrap button:last-child:hover {
+        transform: translate(0, -10px);
+        box-shadow: 0 35px 15px -15px rgba(0, 0, 0, 0.4); }
+  @media (min-width: 768px) {
+    .theme .wrap {
+      text-align: initial; }
+      .theme .wrap h1 {
+        font-size: 60px; } }

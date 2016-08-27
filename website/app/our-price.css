@@ -1,0 +1,145 @@
+.usual {
+  background-color: #45372f;
+  display: flex;
+  align-items: center;
+  min-height: 440px; }
+  .usual .wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 15px; }
+    .usual .wrap h1 {
+      margin: 0; }
+  @media (min-width: 768px) {
+    .usual .wrap {
+      text-align: initial; } }
+
+.dark {
+  color: #b6b6b6;
+  background-color: #2c3035; }
+
+.light {
+  color: #5c5c5c;
+  background-color: #f4f4f4; }
+
+.our-price {
+  background-color: #282a2e;
+  padding-bottom: 30px; }
+  .our-price .wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    text-align: center; }
+    .our-price .wrap h1 {
+      margin-top: 30px;
+      color: #f4f4f4;
+      font-family: "Roboto", sans-serif;
+      font-size: 36px;
+      font-weight: 300; }
+    .our-price .wrap .thumb-container {
+      margin: 0 auto;
+      min-height: 444px;
+      max-width: 938px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .our-price .wrap .thumb-container .thumbnail:nth-child(-n+3) span:nth-child(2) {
+        background-color: #1bbc9d; }
+      .our-price .wrap .thumb-container .thumbnail:nth-child(-n+3) button {
+        background-color: #b0cd3b; }
+      .our-price .wrap .thumb-container .thumbnail:nth-child(4) span:nth-child(2) {
+        background-color: #404040; }
+      .our-price .wrap .thumb-container .thumbnail:nth-child(4) button {
+        background-color: #424242; }
+      .our-price .wrap .thumb-container .thumbnail:nth-child(5) span:nth-child(2) {
+        background-color: #4bb2a5; }
+      .our-price .wrap .thumb-container .thumbnail:nth-child(5) button {
+        background-color: #74b0a4; }
+      .our-price .wrap .thumb-container .thumbnail:last-child span:nth-child(2) {
+        background-color: #b2c47d; }
+      .our-price .wrap .thumb-container .thumbnail:last-child button {
+        background-color: #b6c380; }
+      .our-price .wrap .thumb-container .thumbnail {
+        margin: 30px auto 0 auto;
+        width: 263px;
+        height: 440px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 5px; }
+        .our-price .wrap .thumb-container .thumbnail span {
+          display: block; }
+        .our-price .wrap .thumb-container .thumbnail span:nth-child(2) {
+          line-height: 44px; }
+        .our-price .wrap .thumb-container .thumbnail span {
+          margin-bottom: 20px; }
+        .our-price .wrap .thumb-container .thumbnail span:first-child {
+          margin-top: 40px;
+          margin-bottom: 30px; }
+        .our-price .wrap .thumb-container .thumbnail span:nth-child(2) {
+          margin-bottom: 30px;
+          color: white;
+          font-weight: bold; }
+        .our-price .wrap .thumb-container .thumbnail button {
+          width: 131px;
+          height: 43px;
+          border-radius: 5px;
+          border: 0;
+          color: white;
+          cursor: pointer;
+          margin-left: -4px;
+          margin-top: 10px; }
+          .our-price .wrap .thumb-container .thumbnail button:focus {
+            outline: 0; }
+          .our-price .wrap .thumb-container .thumbnail button:hover {
+            background-color: #1bbc9d; }
+  .our-price .clients-about {
+    width: 100%;
+    max-width: 940px;
+    margin: 74px auto 0 auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .our-price .clients-about span:first-child,
+    .our-price .clients-about span:last-child {
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #424242;
+      vertical-align: middle; }
+    .our-price .clients-about span:nth-child(2) {
+      color: #f4f4f4;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      display: block;
+      text-align: center;
+      font-weight: 500;
+      margin-left: 30px;
+      margin-right: 30px; }
+    @media (min-width: 768px) {
+      .our-price .clients-about span:first-child,
+      .our-price .clients-about span:last-child {
+        width: 30%; }
+      .our-price .clients-about span:nth-child(2) {
+        display: inline; } }
+  .our-price .quote {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 396px;
+    line-height: 18px;
+    margin-top: 50px; }
+    .our-price .quote span:first-child span {
+      font-size: 20px; }
+    .our-price .quote span {
+      font-family: "Arial", sans-serif;
+      font-size: 13px;
+      color: #717171;
+      font-weight: 400; }
+    .our-price .quote .name {
+      color: #b0cd3b;
+      font-weight: 700; }
