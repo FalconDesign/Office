@@ -49,13 +49,62 @@
 
     .skill-container
       margin-top: 60px
+      padding-bottom: 80px
       display: flex
       justify-content: space-around
       flex-wrap: wrap
-      padding-bottom: 80px
-      img
-        margin-top: 15px
+      .box
+        width: 145px
+        height: 73px
+        position: relative
+        margin-bottom: 50px
+        .big-circle
+          background-color: #424242
+          position: absolute
+          width: 145px
+          height: 73px
+          border-radius: 90px 90px 0 0
+          overflow: hidden
+          .med-circle
+            position: absolute
+            background-color: #424242
+            background-image: linear-gradient(-55deg, #aaca29 0%, #1bbc9d 100%)
+            width: 145px
+            height: 73px
+            border-radius: 90px 90px 0 0
+            transition: transform 1s linear
+            transform-origin: 50% 100%
+            &:hover
+              transform: rotate(-180deg)
 
+        .small-circle
+          position: absolute
+          background-color: $dark-section
+          width: 92px
+          height: 46px
+          left: 50%
+          bottom: 0
+          margin-left: -46px
+          border-radius: 90px 90px 0 0
+          color: white
+          font-family: $roboto
+          text-transform: uppercase
+          span
+            font-size: 24px
+            position: absolute
+            bottom: -5px
+            left: 50%
+            transform: translate(-50%, 0)
+        h3
+          position: absolute
+          color: white
+          font-size: 13px
+          font-weight: 500
+          line-height: 30px
+          left: 0
+          right: 0
+          bottom: -60px
+          text-align: center
 @media (min-width: 875px)
   .about
     .wrap
@@ -73,3 +122,5 @@
           transform: translate(-50%, -50%)
       .skill-container
         justify-content: space-between
+        .box
+          margin-bottom: 10px

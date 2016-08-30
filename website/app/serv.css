@@ -5,7 +5,7 @@
   min-height: 440px; }
   .usual .wrap {
     width: 100%;
-    max-width: 1200px;
+    max-width: 970px;
     margin: 0 auto;
     color: white;
     text-align: center;
@@ -29,11 +29,12 @@
   min-height: 440px;
   background-color: #282a2e; }
   .services .wrap {
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-right: 15px;
-    max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 970px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
     color: white; }
     .services .wrap h1 {
       margin-top: 60px;

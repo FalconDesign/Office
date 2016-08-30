@@ -31,14 +31,29 @@ html(lang="en")
             span
             span
             span
+              
       section.home
         .wrap
           .arrow-container
             .arrow-left
-            .arrow-right       
+              <svg class="arrow_left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" width="512" height="512"><g fill="#FFF"><path d="M64.5 122.6c32 0 58.1-26 58.1-58.1s-26-58-58.1-58-58 26-58 58 26 58.1 58 58.1zm0-108c27.5 0 49.9 22.4 49.9 49.9S92 114.4 64.5 114.4 14.6 92 14.6 64.5 37 14.6 64.5 14.6z"/><path d="M70 93.5c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8L52.3 64.2l23.5-23.5c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8 0L43.6 61.3c-.8.8-1.2 1.8-1.2 2.9s.4 2.1 1.2 2.9L70 93.5z"/></g></svg>
+              
+            .arrow-right
+              <svg class="arrow_right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" width="512" height="512"><g fill="#FFF"><path d="M64.5 122.6c32 0 58.1-26 58.1-58.1S96.5 6.4 64.5 6.4 6.4 32.5 6.4 64.5s26.1 58.1 58.1 58.1zm0-108c27.5 0 49.9 22.4 49.9 49.9S92 114.4 64.5 114.4 14.6 92 14.6 64.5 37 14.6 64.5 14.6z"/><path d="M51.1 93.5c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l26.4-26.4c.8-.8 1.2-1.8 1.2-2.9 0-1.1-.4-2.1-1.2-2.9L56.9 34.9c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l23.5 23.5-23.5 23.5c-1.6 1.6-1.6 4.2 0 5.8z"/></g></svg>
+
+                     
           h2 Welcome to Parallels </br> 
             span Clean Responsive Parallax Theme    
-                                    
+          .icon-container
+            img.sun(src="../img-compressed/sun.svg", alt="sun")
+            img.calendar(src="../img-compressed/calendar.svg", alt="calendar")
+            img.placeholder(src="../img-compressed/placeholder.svg", alt="placeholder")
+            img.mail(src="../img-compressed/mail.svg", alt="mail")
+            img.like(src="../img-compressed/like.svg", alt="like")
+            img.printer(src="../img-compressed/printer.svg", alt="printer")
+            img.empty-inbox(src="../img-compressed/empty-inbox.svg", alt="empty-inbox")
+            img.photo-camera(src="../img-compressed/photo-camera.svg", alt="photo-camera")
+                                      
       section.services 
         .wrap
           h1 Our Services
@@ -159,7 +174,8 @@ html(lang="en")
                     span 234
             
             h3 Load more
-            img(src="../img/Arrow.png", alt="arrow")  
+            span.arrow-down
+              img(src="../img/down-arrow.svg", alt="arrow-down") 
                       
       section.usual.pricing
         .wrap
@@ -271,12 +287,32 @@ html(lang="en")
             .line
             span Our Skills
           .skill-container
-            img(src="../img-compressed/3-layers.png", alt="skill")
-            img(src="../img-compressed/3-layers.png", alt="skill")
-            img(src="../img-compressed/3-layers.png", alt="skill")
-            img(src="../img-compressed/3-layers.png", alt="skill")
-            img(src="../img-compressed/3-layers.png", alt="skill")
-          
+            .box
+              .big-circle
+                .med-circle
+              .small-circle: span 70%
+              h3 DESIGN
+            .box
+              .big-circle
+                .med-circle
+              .small-circle: span 85%
+              h3 DEVELOPMENT
+            .box
+              .big-circle
+                .med-circle
+              .small-circle: span 95%   
+              h3 ORGANIZATION   
+            .box
+              .big-circle
+                .med-circle
+              .small-circle: span  100%  
+              h3 LEARNING      
+            .box
+              .big-circle
+                .med-circle
+              .small-circle: span 90%
+              h3 COOPERATION
+            
       section.usual.great
         .wrap
           h1 You looked OVER 6000 px </br> 
@@ -317,14 +353,11 @@ html(lang="en")
           h1 Connect with us </br> 
           span Follow Us On Social Networks
           .social
-            img(src="../img-compressed/c-github.png", alt="")
-            img(src="../img-compressed/c-github.png", alt="")
-            img(src="../img-compressed/c-github.png", alt="")
-            img(src="../img-compressed/c-github.png", alt="")
-            img(src="../img-compressed/c-github.png", alt="")
-            img(src="../img-compressed/c-github.png", alt="")
-            img(src="../img-compressed/c-github.png", alt="")
-            img(src="../img-compressed/c-github.png", alt="")
+            img(src="../img-compressed/linkedin.svg", alt="in")
+            img(src="../img-compressed/facebook.svg", alt="facebook")
+            img(src="../img-compressed/twitter.svg", alt="twitter")
+            img(src="../img-compressed/vk.svg", alt="vk")
+            img(src="../img-compressed/google-plus.svg", alt="google-plus")
       
       section.photo-stream
         .wrap
@@ -385,5 +418,5 @@ html(lang="en")
             | Parallels
           
           .info
-            |2 (555) 888 555 03 20        info@domain.com        skype: username
+            |2 (555) 888 555 03 20    &nbsp;    info@domain.com    &nbsp;    skype: username
             

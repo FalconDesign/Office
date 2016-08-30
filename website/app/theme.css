@@ -5,7 +5,7 @@
   min-height: 440px; }
   .usual .wrap {
     width: 100%;
-    max-width: 1200px;
+    max-width: 970px;
     margin: 0 auto;
     color: white;
     text-align: center;
@@ -37,7 +37,7 @@
   .theme .wrap {
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 970px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 1px;

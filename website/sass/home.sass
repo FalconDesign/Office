@@ -10,16 +10,12 @@
   background-size: cover
   background-attachment: fixed
   position: relative
+  overflow: hidden
 
   .wrap
-    width: 100%
-    max-width: 1200px
-    padding-left: 15px
-    padding-right: 15px
-    margin: 0 auto
-    font-family: $roboto
-    color: white
+    +wrap()
     padding-top: 234px
+    color: white
     h2
       margin: 0
       font-weight: bold
@@ -30,6 +26,7 @@
         font-weight: 500
         font-size: 30px
 
+
     .arrow-container
       margin-top: -40px
       position: absolute
@@ -39,21 +36,99 @@
 
       .arrow-left
         cursor: pointer
-        width: 35px
-        height: 35px
-        background-color: fade-out(white, 0.5)
-        border-radius: 50%
         float: left
         margin-left: 25px
+        .arrow_left
+          width: 35px
+          height: 35px
+          &:hover g
+            fill: $button-green
 
       .arrow-right
         cursor: pointer
-        width: 35px
-        height: 35px
-        background-color: fade-out(white, 0.5)
-        border-radius: 50%
         float: right
         margin-right: 25px
+        .arrow_right
+          width: 35px
+          height: 35px
+          &:hover g
+            fill: $button-green
+
+
+    .icon-container
+      .sun
+        width: 184px
+        height: 184px
+        position: absolute
+        bottom: -92px
+        left: 684px
+      .calendar
+        position: absolute
+        width: 60px
+        height: 60px
+        top: 400px
+        left: 855px
+        transform: rotate(45deg)
+        animation-name: calendar
+        animation-duration: 2.1s
+        animation-timing-function: ease-out
+      .placeholder
+        position: absolute
+        width: 61px
+        height: 59px
+        top: 291px
+        left: 864px
+        transform: rotate(-45deg)
+        animation: place 2s ease-out
+      .mail
+        position: absolute
+        width: 53px
+        height: 53px
+        left: 953px
+        top: 250px
+        transform: rotate(45deg)
+        animation: mail 1.8s ease-out
+      .like
+        position: absolute
+        width: 30px
+        height: 30px
+        left: 883px
+        top: 182px
+        transform: rotate(-45deg)
+        animation-name: like
+        animation-duration: 1.7s
+        animation-timing-function: ease-out
+      .printer
+        position: absolute
+        width: 32px
+        height: 32px
+        left: 985px
+        top: 166px
+        animation-name: printer
+        animation-duration: 1.5s
+        animation-timing-function: ease-out
+      .empty-inbox
+        position: absolute
+        width: 24px
+        height: 24px
+        left: 958px
+        top: 103px
+        transform: rotate(-45deg)
+        animation-name: inbox
+        animation-duration: 2s
+        animation-timing-function: ease-out
+      .photo-camera
+        position: absolute
+        width: 27px
+        height: 27px
+        top: 57px
+        left: 1017px
+        transform: rotate(45deg)
+        animation-name: photo
+        animation-duration: 1.5s
+        animation-timing-function: ease-out
+
+
 
     @media (min-width: 1365px )
       h2
@@ -71,3 +146,37 @@
     @media (min-width: 590px)
       .arrow-container
         margin-top: 31px
+
+
+// Keyframes
+
+@keyframes photo
+  0% {top: 1000px; left: 0px;}
+  100% {top: 57px; left: 1017px; transform: rotate(765deg);}
+
+@keyframes inbox
+  0% {top: 1050px; left: 0px;}
+  100% {top: 103px; left: 958px; transform: rotate(315deg);}
+
+@keyframes printer
+  0% {top: 1100px; left: 0px;}
+  100% {top: 166px; left: 985px; transform: rotate(3turn);}
+
+
+@keyframes like
+  0% {top: 1150px; left: 0px;}
+  100% {top: 182px; left: 883px; transform: rotate(315deg);}
+
+@keyframes mail
+  0% {top: 1200px; left: 0px;}
+  100% {top: 250px; left: 953px; transform: rotate(765deg);}
+
+
+@keyframes place
+  0% {top: 1250px; left: 0px;}
+  100% {top: 291px; left: 864px; transform: rotate(675deg);}
+
+
+@keyframes calendar
+  0% {top: 1300px; left: 0px;}
+  100% {top: 400px; left: 855px; transform: rotate(765deg);}

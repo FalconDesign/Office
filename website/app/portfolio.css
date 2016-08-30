@@ -5,7 +5,7 @@
   min-height: 440px; }
   .usual .wrap {
     width: 100%;
-    max-width: 1200px;
+    max-width: 970px;
     margin: 0 auto;
     color: white;
     text-align: center;
@@ -105,6 +105,12 @@
       font-size: 16px;
       font-weight: 300;
       margin-top: 47px; }
+    .portfolio .wrap .arrow-down img {
+      width: 25px;
+      cursor: pointer;
+      opacity: 0.5; }
+    .portfolio .wrap .arrow-down:hover img {
+      opacity: 1; }
   @media (min-width: 680px) {
     .portfolio .wrap .photos {
       justify-content: space-between; } }

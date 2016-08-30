@@ -5,7 +5,7 @@
   min-height: 440px; }
   .usual .wrap {
     width: 100%;
-    max-width: 1200px;
+    max-width: 970px;
     margin: 0 auto;
     color: white;
     text-align: center;
@@ -33,16 +33,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .home .wrap {
+    margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 970px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
-    font-family: "Roboto", sans-serif;
-    color: white;
-    padding-top: 234px; }
+    padding-top: 1px;
+    padding-top: 234px;
+    color: white; }
     .home .wrap h2 {
       margin: 0;
       font-weight: bold;
@@ -59,20 +60,93 @@
       left: 0; }
       .home .wrap .arrow-container .arrow-left {
         cursor: pointer;
-        width: 35px;
-        height: 35px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
         float: left;
         margin-left: 25px; }
+        .home .wrap .arrow-container .arrow-left .arrow_left {
+          width: 35px;
+          height: 35px; }
+          .home .wrap .arrow-container .arrow-left .arrow_left:hover g {
+            fill: #b0cd3b; }
       .home .wrap .arrow-container .arrow-right {
         cursor: pointer;
-        width: 35px;
-        height: 35px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
         float: right;
         margin-right: 25px; }
+        .home .wrap .arrow-container .arrow-right .arrow_right {
+          width: 35px;
+          height: 35px; }
+          .home .wrap .arrow-container .arrow-right .arrow_right:hover g {
+            fill: #b0cd3b; }
+    .home .wrap .icon-container .sun {
+      width: 184px;
+      height: 184px;
+      position: absolute;
+      bottom: -92px;
+      left: 684px; }
+    .home .wrap .icon-container .calendar {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 400px;
+      left: 855px;
+      transform: rotate(45deg);
+      animation-name: calendar;
+      animation-duration: 2.1s;
+      animation-timing-function: ease-out; }
+    .home .wrap .icon-container .placeholder {
+      position: absolute;
+      width: 61px;
+      height: 59px;
+      top: 291px;
+      left: 864px;
+      transform: rotate(-45deg);
+      animation: place 2s ease-out; }
+    .home .wrap .icon-container .mail {
+      position: absolute;
+      width: 53px;
+      height: 53px;
+      left: 953px;
+      top: 250px;
+      transform: rotate(45deg);
+      animation: mail 1.8s ease-out; }
+    .home .wrap .icon-container .like {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 883px;
+      top: 182px;
+      transform: rotate(-45deg);
+      animation-name: like;
+      animation-duration: 1.7s;
+      animation-timing-function: ease-out; }
+    .home .wrap .icon-container .printer {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      left: 985px;
+      top: 166px;
+      animation-name: printer;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out; }
+    .home .wrap .icon-container .empty-inbox {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 958px;
+      top: 103px;
+      transform: rotate(-45deg);
+      animation-name: inbox;
+      animation-duration: 2s;
+      animation-timing-function: ease-out; }
+    .home .wrap .icon-container .photo-camera {
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      top: 57px;
+      left: 1017px;
+      transform: rotate(45deg);
+      animation-name: photo;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out; }
     @media (min-width: 1365px) {
       .home .wrap h2 {
         display: inline-block;
@@ -87,3 +161,66 @@
     @media (min-width: 590px) {
       .home .wrap .arrow-container {
         margin-top: 31px; } }
+
+@keyframes photo {
+  0% {
+    top: 1000px;
+    left: 0px; }
+  100% {
+    top: 57px;
+    left: 1017px;
+    transform: rotate(765deg); } }
+
+@keyframes inbox {
+  0% {
+    top: 1050px;
+    left: 0px; }
+  100% {
+    top: 103px;
+    left: 958px;
+    transform: rotate(315deg); } }
+
+@keyframes printer {
+  0% {
+    top: 1100px;
+    left: 0px; }
+  100% {
+    top: 166px;
+    left: 985px;
+    transform: rotate(3turn); } }
+
+@keyframes like {
+  0% {
+    top: 1150px;
+    left: 0px; }
+  100% {
+    top: 182px;
+    left: 883px;
+    transform: rotate(315deg); } }
+
+@keyframes mail {
+  0% {
+    top: 1200px;
+    left: 0px; }
+  100% {
+    top: 250px;
+    left: 953px;
+    transform: rotate(765deg); } }
+
+@keyframes place {
+  0% {
+    top: 1250px;
+    left: 0px; }
+  100% {
+    top: 291px;
+    left: 864px;
+    transform: rotate(675deg); } }
+
+@keyframes calendar {
+  0% {
+    top: 1300px;
+    left: 0px; }
+  100% {
+    top: 400px;
+    left: 855px;
+    transform: rotate(765deg); } }

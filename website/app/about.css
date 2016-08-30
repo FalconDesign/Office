@@ -5,7 +5,7 @@
   min-height: 440px; }
   .usual .wrap {
     width: 100%;
-    max-width: 1200px;
+    max-width: 970px;
     margin: 0 auto;
     color: white;
     text-align: center;
@@ -30,7 +30,7 @@
   .about .wrap {
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 970px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 1px; }
@@ -81,12 +81,61 @@
         text-transform: uppercase; }
     .about .wrap .skill-container {
       margin-top: 60px;
+      padding-bottom: 80px;
       display: flex;
       justify-content: space-around;
-      flex-wrap: wrap;
-      padding-bottom: 80px; }
-      .about .wrap .skill-container img {
-        margin-top: 15px; }
+      flex-wrap: wrap; }
+      .about .wrap .skill-container .box {
+        width: 145px;
+        height: 73px;
+        position: relative;
+        margin-bottom: 50px; }
+        .about .wrap .skill-container .box .big-circle {
+          background-color: #424242;
+          position: absolute;
+          width: 145px;
+          height: 73px;
+          border-radius: 90px 90px 0 0;
+          overflow: hidden; }
+          .about .wrap .skill-container .box .big-circle .med-circle {
+            position: absolute;
+            background-color: #424242;
+            background-image: linear-gradient(-55deg, #aaca29 0%, #1bbc9d 100%);
+            width: 145px;
+            height: 73px;
+            border-radius: 90px 90px 0 0;
+            transition: transform 1s linear;
+            transform-origin: 50% 100%; }
+            .about .wrap .skill-container .box .big-circle .med-circle:hover {
+              transform: rotate(-180deg); }
+        .about .wrap .skill-container .box .small-circle {
+          position: absolute;
+          background-color: #282a2e;
+          width: 92px;
+          height: 46px;
+          left: 50%;
+          bottom: 0;
+          margin-left: -46px;
+          border-radius: 90px 90px 0 0;
+          color: white;
+          font-family: "Roboto", sans-serif;
+          text-transform: uppercase; }
+          .about .wrap .skill-container .box .small-circle span {
+            font-size: 24px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%, 0); }
+        .about .wrap .skill-container .box h3 {
+          position: absolute;
+          color: white;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 30px;
+          left: 0;
+          right: 0;
+          bottom: -60px;
+          text-align: center; }
 
 @media (min-width: 875px) {
   .about .wrap .about-container {
@@ -101,4 +150,6 @@
     left: 50%;
     transform: translate(-50%, -50%); }
   .about .wrap .skill-container {
-    justify-content: space-between; } }
+    justify-content: space-between; }
+    .about .wrap .skill-container .box {
+      margin-bottom: 10px; } }
