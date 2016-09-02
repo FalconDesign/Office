@@ -9,52 +9,48 @@ html(lang="en")
     link(rel="stylesheet", type="text/css", href="all.css")
   body
     #page
-      header
+      header.main-header
         nav
           .parallels
             img(src="../img-compressed/circle.png", alt="Logo")
             | Parallels
           ul.main-nav
             li
-              a(href="#") Home 
+              a.scroll(href="#home") Home 
             li
-              a(href="#") Services
+              a.scroll(href="#services") Services
             li
-              a(href="#") Portfolio 
+              a.scroll(href="#portfolio") Portfolio 
             li
-              a(href="#") Pricing 
+              a.scroll(href="#pricing") Pricing 
             li
-              a(href="#") About 
+              a.scroll(href="#about ") About 
             li
-              a(href="#") Contact
+              a.scroll(href="#contact") Contact
           a.burger
             span
             span
             span
               
-      section.home
-        .wrap
-          .arrow-container
-            .arrow-left
-              <svg class="arrow_left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" width="512" height="512"><g fill="#FFF"><path d="M64.5 122.6c32 0 58.1-26 58.1-58.1s-26-58-58.1-58-58 26-58 58 26 58.1 58 58.1zm0-108c27.5 0 49.9 22.4 49.9 49.9S92 114.4 64.5 114.4 14.6 92 14.6 64.5 37 14.6 64.5 14.6z"/><path d="M70 93.5c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8L52.3 64.2l23.5-23.5c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8 0L43.6 61.3c-.8.8-1.2 1.8-1.2 2.9s.4 2.1 1.2 2.9L70 93.5z"/></g></svg>
-              
-            .arrow-right
-              <svg class="arrow_right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" width="512" height="512"><g fill="#FFF"><path d="M64.5 122.6c32 0 58.1-26 58.1-58.1S96.5 6.4 64.5 6.4 6.4 32.5 6.4 64.5s26.1 58.1 58.1 58.1zm0-108c27.5 0 49.9 22.4 49.9 49.9S92 114.4 64.5 114.4 14.6 92 14.6 64.5 37 14.6 64.5 14.6z"/><path d="M51.1 93.5c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l26.4-26.4c.8-.8 1.2-1.8 1.2-2.9 0-1.1-.4-2.1-1.2-2.9L56.9 34.9c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l23.5 23.5-23.5 23.5c-1.6 1.6-1.6 4.2 0 5.8z"/></g></svg>
+      section.home#home
+        .home-container
+          .wrap
+            h2 Welcome to Parallels </br> 
+              span Clean Responsive Parallax Theme  
+                
+            .icon-container
+              img.sun(src="../img-compressed/sun.svg", alt="sun")
+              img.calendar(src="../img-compressed/calendar.svg", alt="calendar")
+              img.placeholder(src="../img-compressed/placeholder.svg", alt="placeholder")
+              img.mail(src="../img-compressed/mail.svg", alt="mail")
+              img.like(src="../img-compressed/like.svg", alt="like")
+              img.printer(src="../img-compressed/printer.svg", alt="printer")
+              img.empty-inbox(src="../img-compressed/empty-inbox.svg", alt="empty-inbox")
+              img.photo-camera(src="../img-compressed/photo-camera.svg", alt="photo-camera")
+          
 
-                     
-          h2 Welcome to Parallels </br> 
-            span Clean Responsive Parallax Theme    
-          .icon-container
-            img.sun(src="../img-compressed/sun.svg", alt="sun")
-            img.calendar(src="../img-compressed/calendar.svg", alt="calendar")
-            img.placeholder(src="../img-compressed/placeholder.svg", alt="placeholder")
-            img.mail(src="../img-compressed/mail.svg", alt="mail")
-            img.like(src="../img-compressed/like.svg", alt="like")
-            img.printer(src="../img-compressed/printer.svg", alt="printer")
-            img.empty-inbox(src="../img-compressed/empty-inbox.svg", alt="empty-inbox")
-            img.photo-camera(src="../img-compressed/photo-camera.svg", alt="photo-camera")
                                       
-      section.services 
+      section.services#services 
         .wrap
           h1 Our Services
           .serv-container
@@ -83,106 +79,104 @@ html(lang="en")
           
           
           
-      section.portfolio    
+      section#portfolio.portfolio    
           .wrap
             h1 Portfolio
             .buttons
-              button Web-design
-              button UI Design
-              button Prototype
-              button Photography
-            .photos
-              figure
-                img(src="../img/224.jpg", alt="")
-                figcaption
-                  h3 Clean night sky
-                  span photography
-                  div
-                    img(src="../img/Chat.png", alt="Chat")
-                    span 53
-                    img(src="../img/Heart.png", alt="Heart")
-                    span 234
-              figure
-                img(src="../img/224.jpg", alt="")
-                figcaption
-                  h3 Clean night sky
-                  span photography
-                  div
-                    img(src="../img/Chat.png", alt="Chat")
-                    span 53
-                    img(src="../img/Heart.png", alt="Heart")
-                    span 234
-              figure
-                img(src="../img/224.jpg", alt="")
-                figcaption
-                  h3 Clean night sky
-                  span photography
-                  div
-                    img(src="../img/Chat.png", alt="Chat")
-                    span 53
-                    img(src="../img/Heart.png", alt="Heart")
-                    span 234
-              figure
-                img(src="../img/224.jpg", alt="")
-                figcaption
-                  h3 Clean night sky
-                  span photography
-                  div
-                    img(src="../img/Chat.png", alt="Chat")
-                    span 53
-                    img(src="../img/Heart.png", alt="Heart")
-                    span 234
-              figure
-                img(src="../img/224.jpg", alt="")
-                figcaption
-                  h3 Clean night sky
-                  span photography
-                  div
-                    img(src="../img/Chat.png", alt="Chat")
-                    span 53
-                    img(src="../img/Heart.png", alt="Heart")
-                    span 234
-              figure
-                img(src="../img/224.jpg", alt="")
-                figcaption
-                  h3 Clean night sky
-                  span photography
-                  div
-                    img(src="../img/Chat.png", alt="Chat")
-                    span 53
-                    img(src="../img/Heart.png", alt="Heart")
-                    span 234
-              figure
-                img(src="../img/224.jpg", alt="")
-                figcaption
-                  h3 Clean night sky
-                  span photography
-                  div
-                    img(src="../img/Chat.png", alt="Chat")
-                    span 53
-                    img(src="../img/Heart.png", alt="Heart")
-                    span 234
-              figure
-                img(src="../img/224.jpg", alt="")
-                figcaption
-                  h3 Clean night sky
-                  span photography
-                  div
-                    img(src="../img/Chat.png", alt="Chat")
-                    span 53
-                    img(src="../img/Heart.png", alt="Heart")
-                    span 234
-            
-            h3 Load more
-            span.arrow-down
-              img(src="../img/down-arrow.svg", alt="arrow-down") 
+              button.change(data-folder="web-design") Web-design
+              button.change(data-folder="ui-design") UI Design
+              button.change(data-folder="prototype") Prototype
+              button.change.active(data-folder="photography") Photography
+            .project-load
+              .photos
+                figure
+                  img(src="../img/fit1.jpg", alt="")
+                  figcaption
+                    h3 Amazing Design
+                    span photography
+                    div
+                      img(src="../img/Chat.png", alt="Chat")
+                      span 53
+                      img(src="../img/Heart.png", alt="Heart")
+                      span 234
+                figure
+                  img(src="../img/fit2.jpg", alt="")
+                  figcaption
+                    h3 Amazing Design
+                    span photography
+                    div
+                      img(src="../img/Chat.png", alt="Chat")
+                      span 53
+                      img(src="../img/Heart.png", alt="Heart")
+                      span 234
+                figure
+                  img(src="../img/fit3.jpg", alt="")
+                  figcaption
+                    h3 Amazing Design
+                    span photography
+                    div
+                      img(src="../img/Chat.png", alt="Chat")
+                      span 53
+                      img(src="../img/Heart.png", alt="Heart")
+                      span 234
+                figure
+                  img(src="../img/fit1.jpg", alt="")
+                  figcaption
+                    h3 Amazing Design
+                    span photography
+                    div
+                      img(src="../img/Chat.png", alt="Chat")
+                      span 53
+                      img(src="../img/Heart.png", alt="Heart")
+                      span 234
+                figure
+                  img(src="../img/fit2.jpg", alt="")
+                  figcaption
+                    h3 Amazing Design
+                    span photography
+                    div
+                      img(src="../img/Chat.png", alt="Chat")
+                      span 53
+                      img(src="../img/Heart.png", alt="Heart")
+                      span 234
+                figure
+                  img(src="../img/fit3.jpg", alt="")
+                  figcaption
+                    h3 Amazing Design
+                    span photography
+                    div
+                      img(src="../img/Chat.png", alt="Chat")
+                      span 53
+                      img(src="../img/Heart.png", alt="Heart")
+                      span 234
+                figure
+                  img(src="../img/fit1.jpg", alt="")
+                  figcaption
+                    h3 Amazing Design
+                    span photography
+                    div
+                      img(src="../img/Chat.png", alt="Chat")
+                      span 53
+                      img(src="../img/Heart.png", alt="Heart")
+                      span 234
+                figure
+                  img(src="../img/fit2.jpg", alt="")
+                  figcaption
+                    h3 Amazing Design
+                    span photography
+                    div
+                      img(src="../img/Chat.png", alt="Chat")
+                      span 53
+                      img(src="../img/Heart.png", alt="Heart")
+                      span 234
+          
                       
       section.usual.pricing
         .wrap
           h1 Pricing table </br> 
           span Clean beautiful flat table
       
-      section.our-price
+      section.our-price#pricing
         .wrap
           h1 Our Price
           .thumb-container
@@ -254,7 +248,7 @@ html(lang="en")
           h1 Our team </br> 
           span We a professional and progressive team
         
-      section.about
+      section.about#about
         .wrap
           h1 About Us
           .about-container
@@ -289,28 +283,30 @@ html(lang="en")
           .skill-container
             .box
               .big-circle
-                .med-circle
-              .small-circle: span 70%
+                .med-circle.med-first
+              .small-circle
+                span.one
               h3 DESIGN
             .box
               .big-circle
-                .med-circle
-              .small-circle: span 85%
+                .med-circle.med-second
+              .small-circle
+                 span.two
               h3 DEVELOPMENT
             .box
               .big-circle
-                .med-circle
-              .small-circle: span 95%   
+                .med-circle.med-first
+              .small-circle: span.one
               h3 ORGANIZATION   
             .box
               .big-circle
-                .med-circle
-              .small-circle: span  100%  
+                .med-circle.med-second
+              .small-circle: span.two 
               h3 LEARNING      
             .box
               .big-circle
-                .med-circle
-              .small-circle: span 90%
+                .med-circle.med-first
+              .small-circle: span.one
               h3 COOPERATION
             
       section.usual.great
@@ -318,7 +314,7 @@ html(lang="en")
           h1 You looked OVER 6000 px </br> 
           span That’s Great!
       
-      .section.contact
+      section.contact#contact
         .wrap
           h1 Contact Us
           .contact-container
@@ -419,4 +415,7 @@ html(lang="en")
           
           .info
             |2 (555) 888 555 03 20    &nbsp;    info@domain.com    &nbsp;    skype: username
-            
+        
+    script(src="jquery-3.1.0.min.js")        
+    script(src="function.js")
+      

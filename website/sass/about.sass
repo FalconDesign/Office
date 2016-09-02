@@ -72,11 +72,13 @@
             width: 145px
             height: 73px
             border-radius: 90px 90px 0 0
-            transition: transform 1s linear
+            transition: transform 2s linear
             transform-origin: 50% 100%
-            &:hover
-              transform: rotate(-180deg)
-
+            transform: rotate(-180deg)
+            &.rotate
+              transform: rotate(-50deg)
+            &.rotate-second
+              transform: rotate(-20deg)
         .small-circle
           position: absolute
           background-color: $dark-section

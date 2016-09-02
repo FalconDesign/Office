@@ -1,141 +1,117 @@
 // Section Home
 @import mixin-var.sass
-
 .home
   height: calc(100vh - 70px)
-  width: 100%
   background: linear-gradient(transparent 50%, black), url('../img/city.jpg')
   background-position: center
   background-repeat: no-repeat
   background-size: cover
   background-attachment: fixed
-  position: relative
   overflow: hidden
 
-  .wrap
-    +wrap()
-    padding-top: 234px
-    color: white
-    h2
-      margin: 0
-      font-weight: bold
-      text-align: center
-      font-size: 40px
-      span
-        color: $link-green
-        font-weight: 500
-        font-size: 30px
-
-
-    .arrow-container
-      margin-top: -40px
-      position: absolute
-      width: 100%
-      left: 0
-
-
-      .arrow-left
-        cursor: pointer
-        float: left
-        margin-left: 25px
-        .arrow_left
-          width: 35px
-          height: 35px
-          &:hover g
-            fill: $button-green
-
-      .arrow-right
-        cursor: pointer
-        float: right
-        margin-right: 25px
-        .arrow_right
-          width: 35px
-          height: 35px
-          &:hover g
-            fill: $button-green
-
-
-    .icon-container
-      .sun
-        width: 184px
-        height: 184px
-        position: absolute
-        bottom: -92px
-        left: 684px
-      .calendar
-        position: absolute
-        width: 60px
-        height: 60px
-        top: 400px
-        left: 855px
-        transform: rotate(45deg)
-        animation-name: calendar
-        animation-duration: 2.1s
-        animation-timing-function: ease-out
-      .placeholder
-        position: absolute
-        width: 61px
-        height: 59px
-        top: 291px
-        left: 864px
-        transform: rotate(-45deg)
-        animation: place 2s ease-out
-      .mail
-        position: absolute
-        width: 53px
-        height: 53px
-        left: 953px
-        top: 250px
-        transform: rotate(45deg)
-        animation: mail 1.8s ease-out
-      .like
-        position: absolute
-        width: 30px
-        height: 30px
-        left: 883px
-        top: 182px
-        transform: rotate(-45deg)
-        animation-name: like
-        animation-duration: 1.7s
-        animation-timing-function: ease-out
-      .printer
-        position: absolute
-        width: 32px
-        height: 32px
-        left: 985px
-        top: 166px
-        animation-name: printer
-        animation-duration: 1.5s
-        animation-timing-function: ease-out
-      .empty-inbox
-        position: absolute
-        width: 24px
-        height: 24px
-        left: 958px
-        top: 103px
-        transform: rotate(-45deg)
-        animation-name: inbox
-        animation-duration: 2s
-        animation-timing-function: ease-out
-      .photo-camera
-        position: absolute
-        width: 27px
-        height: 27px
-        top: 57px
-        left: 1017px
-        transform: rotate(45deg)
-        animation-name: photo
-        animation-duration: 1.5s
-        animation-timing-function: ease-out
-
-
-
-    @media (min-width: 1365px )
+  .home-container
+    width: 100%
+    max-width: 1350px
+    height: 100%
+    position: relative
+    margin: 0 auto
+    .wrap
+      +wrap()
+      padding-top: 234px
+      color: white
       h2
-        display: inline-block
-        text-align: initial
+        margin: 0
+        font-weight: bold
+        text-align: center
+        font-size: 40px
+        span
+          color: $link-green
+          font-weight: 500
+          font-size: 30px
 
-    @media #{$desktop}
+
+      .icon-container
+        .sun
+          width: 184px
+          height: 184px
+          position: absolute
+          bottom: -92px
+          left: 684px
+        .calendar
+          position: absolute
+          width: 60px
+          height: 60px
+          top: 400px
+          left: 855px
+          transform: rotate(45deg)
+          animation-duration: 2.1s
+          animation-timing-function: ease-out
+        .placeholder
+          position: absolute
+          width: 61px
+          height: 59px
+          top: 291px
+          left: 864px
+          transform: rotate(-45deg)
+          animation-duration: 2s
+          animation-timing-function: ease-out
+        .mail
+          position: absolute
+          width: 53px
+          height: 53px
+          left: 953px
+          top: 250px
+          transform: rotate(45deg)
+          animation-duration: 1.8s
+          animation-timing-function: ease-out
+        .like
+          position: absolute
+          width: 30px
+          height: 30px
+          left: 883px
+          top: 182px
+          transform: rotate(-45deg)
+          animation-duration: 1.7s
+          animation-timing-function: ease-out
+        .printer
+          position: absolute
+          width: 32px
+          height: 32px
+          left: 985px
+          top: 166px
+          animation-duration: 1.5s
+          animation-timing-function: ease-out
+        .empty-inbox
+          position: absolute
+          width: 24px
+          height: 24px
+          left: 958px
+          top: 103px
+          transform: rotate(-45deg)
+          animation-duration: 2s
+          animation-timing-function: ease-out
+        .photo-camera
+          position: absolute
+          width: 27px
+          height: 27px
+          top: 57px
+          left: 1017px
+          transform: rotate(45deg)
+          animation-duration: 1.5s
+          animation-timing-function: ease-out
+
+
+
+@media (min-width: 1340px )
+  .home
+    .home-container
+      h2
+        text-align: initial !important
+
+@media #{$desktop}
+  .home
+    margin-top: 70px
+    .home-container
       h2
         font-size: 60px
         line-height: 48px
@@ -143,12 +119,32 @@
           font-size: 40px
           line-height: 40px
 
-    @media (min-width: 590px)
+@media (min-width: 590px)
+  .home
+    .home-container
       .arrow-container
-        margin-top: 31px
+        margin-top: 31px !important
 
 
 // Keyframes
+
+.animate
+  .calendar
+    animation-name: calendar
+  .placeholder
+    animation-name: place
+  .mail
+    animation-name: mail
+  .like
+    animation-name: like
+  .printer
+    animation-name: printer
+  .empty-inbox
+    animation-name: inbox
+  .photo-camera
+    animation-name: photo
+
+
 
 @keyframes photo
   0% {top: 1000px; left: 0px;}

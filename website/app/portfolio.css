@@ -56,61 +56,61 @@
         background-color: #1bbc9d; }
       .portfolio .wrap .buttons button:focus {
         outline: 0; }
-    .portfolio .wrap .photos {
-      margin: 40px auto 0 auto;
-      width: 100%;
-      max-width: 938px;
-      min-height: 462px;
+      .portfolio .wrap .buttons button.active {
+        background-color: #1bbc9d !important; }
+    .portfolio .wrap .project-load {
+      min-height: 476px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around; }
-      .portfolio .wrap .photos figure {
-        height: 224px !important;
-        margin: 0;
-        position: relative;
+      align-items: center; }
+      .portfolio .wrap .project-load .photos {
+        margin: 40px auto 0 auto;
+        width: 100%;
+        max-width: 938px;
+        min-height: 462px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 14px; }
-        .portfolio .wrap .photos figure figcaption {
-          position: absolute;
-          width: 170px;
-          height: 170px;
-          background-color: rgba(128, 128, 128, 0.3);
-          text-align: center;
-          font-family: "Roboto", sans-serif;
-          color: white;
-          font-size: 14px;
-          font-weight: 300; }
-          .portfolio .wrap .photos figure figcaption h3 {
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 0; }
-          .portfolio .wrap .photos figure figcaption div {
-            margin-top: 31px;
-            display: flex;
-            justify-content: center;
-            align-items: center; }
-            .portfolio .wrap .photos figure figcaption div img {
-              margin: 5px; }
-            .portfolio .wrap .photos figure figcaption div span {
-              color: white;
-              font-family: "Roboto", sans-serif;
-              font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+        .portfolio .wrap .project-load .photos figure {
+          height: 224px !important;
+          width: 224px;
+          margin: 0;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 14px;
+          overflow: hidden; }
+          .portfolio .wrap .project-load .photos figure:hover figcaption {
+            top: 0; }
+          .portfolio .wrap .project-load .photos figure figcaption {
+            position: absolute;
+            top: 224px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(128, 128, 128, 0.7);
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            font-size: 14px;
+            font-weight: 300;
+            transition: top 200ms linear; }
+            .portfolio .wrap .project-load .photos figure figcaption h3 {
+              font-size: 18px;
               font-weight: 500;
-              margin: 5px; }
-    .portfolio .wrap h3 {
-      color: white;
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      font-weight: 300;
-      margin-top: 47px; }
-    .portfolio .wrap .arrow-down img {
-      width: 25px;
-      cursor: pointer;
-      opacity: 0.5; }
-    .portfolio .wrap .arrow-down:hover img {
-      opacity: 1; }
-  @media (min-width: 680px) {
+              margin-bottom: 0; }
+            .portfolio .wrap .project-load .photos figure figcaption div {
+              margin-top: 31px;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              .portfolio .wrap .project-load .photos figure figcaption div img {
+                margin: 5px; }
+              .portfolio .wrap .project-load .photos figure figcaption div span {
+                color: white;
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                margin: 5px; }
+  @media (min-width: 720px) {
     .portfolio .wrap .photos {
       justify-content: space-between; } }

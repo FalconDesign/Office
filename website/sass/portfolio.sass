@@ -25,49 +25,47 @@
     .buttons
       button
         +button-squared()
+        &.active
+          background-color: $price-green !important
 
-    .photos
-      margin: 40px auto 0 auto
-      width: 100%
-      max-width: 938px
-      min-height: 462px
+    .project-load
+      min-height: 476px
       display: flex
-      flex-wrap: wrap
-      justify-content: space-around
-
-      figure
-        height: 224px !important
-        margin: 0
-        position: relative
+      align-items: center
+      .photos
+        margin: 40px auto 0 auto
+        width: 100%
+        max-width: 938px
+        min-height: 462px
         display: flex
-        justify-content: center
-        align-items: center
-        margin-top: 14px
+        flex-wrap: wrap
+        justify-content: space-around
 
-        figcaption
-          position: absolute
-          width: 170px
-          height: 170px
-          background-color: fade-out(gray, 0.7)
-          +thumbnail()
+        figure
+          height: 224px !important
+          width: 224px
+          margin: 0
+          position: relative
+          display: flex
+          justify-content: center
+          align-items: center
+          margin-top: 14px
+          overflow: hidden
+          &:hover figcaption
+            top: 0
 
-    h3
-      color: white
-      font-family: $roboto
-      font-size: 16px
-      font-weight: 300
-      margin-top: 47px
-
-    .arrow-down
-      img
-        width: 25px
-        cursor: pointer
-        opacity: 0.5
-      &:hover img
-        opacity: 1
+          figcaption
+            position: absolute
+            top: 224px
+            width: 100%
+            height: 100%
+            background-color: fade-out(gray, 0.3)
+            +thumbnail()
+            transition: top 200ms linear
 
 
-  @media (min-width: 680px)
+
+  @media (min-width: 720px)
     .wrap
       .photos
         justify-content: space-between

@@ -104,10 +104,13 @@
             width: 145px;
             height: 73px;
             border-radius: 90px 90px 0 0;
-            transition: transform 1s linear;
-            transform-origin: 50% 100%; }
-            .about .wrap .skill-container .box .big-circle .med-circle:hover {
-              transform: rotate(-180deg); }
+            transition: transform 2s linear;
+            transform-origin: 50% 100%;
+            transform: rotate(-180deg); }
+            .about .wrap .skill-container .box .big-circle .med-circle.rotate {
+              transform: rotate(-50deg); }
+            .about .wrap .skill-container .box .big-circle .med-circle.rotate-second {
+              transform: rotate(-20deg); }
         .about .wrap .skill-container .box .small-circle {
           position: absolute;
           background-color: #282a2e;

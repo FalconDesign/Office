@@ -27,140 +27,143 @@
 
 .home {
   height: calc(100vh - 70px);
-  width: 100%;
   background: linear-gradient(transparent 50%, black), url("../img/city.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
   overflow: hidden; }
-  .home .wrap {
-    margin: 0 auto;
+  .home .home-container {
     width: 100%;
-    max-width: 970px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 1px;
-    padding-top: 234px;
-    color: white; }
-    .home .wrap h2 {
-      margin: 0;
-      font-weight: bold;
-      text-align: center;
-      font-size: 40px; }
-      .home .wrap h2 span {
-        color: #97c248;
-        font-weight: 500;
-        font-size: 30px; }
-    .home .wrap .arrow-container {
-      margin-top: -40px;
-      position: absolute;
+    max-width: 1350px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto; }
+    .home .home-container .wrap {
+      margin: 0 auto;
       width: 100%;
-      left: 0; }
-      .home .wrap .arrow-container .arrow-left {
-        cursor: pointer;
-        float: left;
-        margin-left: 25px; }
-        .home .wrap .arrow-container .arrow-left .arrow_left {
-          width: 35px;
-          height: 35px; }
-          .home .wrap .arrow-container .arrow-left .arrow_left:hover g {
-            fill: #b0cd3b; }
-      .home .wrap .arrow-container .arrow-right {
-        cursor: pointer;
-        float: right;
-        margin-right: 25px; }
-        .home .wrap .arrow-container .arrow-right .arrow_right {
-          width: 35px;
-          height: 35px; }
-          .home .wrap .arrow-container .arrow-right .arrow_right:hover g {
-            fill: #b0cd3b; }
-    .home .wrap .icon-container .sun {
-      width: 184px;
-      height: 184px;
-      position: absolute;
-      bottom: -92px;
-      left: 684px; }
-    .home .wrap .icon-container .calendar {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 400px;
-      left: 855px;
-      transform: rotate(45deg);
-      animation-name: calendar;
-      animation-duration: 2.1s;
-      animation-timing-function: ease-out; }
-    .home .wrap .icon-container .placeholder {
-      position: absolute;
-      width: 61px;
-      height: 59px;
-      top: 291px;
-      left: 864px;
-      transform: rotate(-45deg);
-      animation: place 2s ease-out; }
-    .home .wrap .icon-container .mail {
-      position: absolute;
-      width: 53px;
-      height: 53px;
-      left: 953px;
-      top: 250px;
-      transform: rotate(45deg);
-      animation: mail 1.8s ease-out; }
-    .home .wrap .icon-container .like {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      left: 883px;
-      top: 182px;
-      transform: rotate(-45deg);
-      animation-name: like;
-      animation-duration: 1.7s;
-      animation-timing-function: ease-out; }
-    .home .wrap .icon-container .printer {
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      left: 985px;
-      top: 166px;
-      animation-name: printer;
-      animation-duration: 1.5s;
-      animation-timing-function: ease-out; }
-    .home .wrap .icon-container .empty-inbox {
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      left: 958px;
-      top: 103px;
-      transform: rotate(-45deg);
-      animation-name: inbox;
-      animation-duration: 2s;
-      animation-timing-function: ease-out; }
-    .home .wrap .icon-container .photo-camera {
-      position: absolute;
-      width: 27px;
-      height: 27px;
-      top: 57px;
-      left: 1017px;
-      transform: rotate(45deg);
-      animation-name: photo;
-      animation-duration: 1.5s;
-      animation-timing-function: ease-out; }
-    @media (min-width: 1365px) {
-      .home .wrap h2 {
-        display: inline-block;
-        text-align: initial; } }
-    @media (min-width: 768px) {
-      .home .wrap h2 {
-        font-size: 60px;
-        line-height: 48px; }
-        .home .wrap h2 span {
-          font-size: 40px;
-          line-height: 40px; } }
-    @media (min-width: 590px) {
-      .home .wrap .arrow-container {
-        margin-top: 31px; } }
+      max-width: 970px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 1px;
+      padding-top: 234px;
+      color: white; }
+      .home .home-container .wrap h2 {
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        font-size: 40px; }
+        .home .home-container .wrap h2 span {
+          color: #97c248;
+          font-weight: 500;
+          font-size: 30px; }
+      .home .home-container .wrap .icon-container .sun {
+        width: 184px;
+        height: 184px;
+        position: absolute;
+        bottom: -92px;
+        left: 684px; }
+      .home .home-container .wrap .icon-container .calendar {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 400px;
+        left: 855px;
+        transform: rotate(45deg);
+        animation-duration: 2.1s;
+        animation-timing-function: ease-out; }
+      .home .home-container .wrap .icon-container .placeholder {
+        position: absolute;
+        width: 61px;
+        height: 59px;
+        top: 291px;
+        left: 864px;
+        transform: rotate(-45deg);
+        animation-duration: 2s;
+        animation-timing-function: ease-out; }
+      .home .home-container .wrap .icon-container .mail {
+        position: absolute;
+        width: 53px;
+        height: 53px;
+        left: 953px;
+        top: 250px;
+        transform: rotate(45deg);
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out; }
+      .home .home-container .wrap .icon-container .like {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 883px;
+        top: 182px;
+        transform: rotate(-45deg);
+        animation-duration: 1.7s;
+        animation-timing-function: ease-out; }
+      .home .home-container .wrap .icon-container .printer {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: 985px;
+        top: 166px;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out; }
+      .home .home-container .wrap .icon-container .empty-inbox {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 958px;
+        top: 103px;
+        transform: rotate(-45deg);
+        animation-duration: 2s;
+        animation-timing-function: ease-out; }
+      .home .home-container .wrap .icon-container .photo-camera {
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        top: 57px;
+        left: 1017px;
+        transform: rotate(45deg);
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out; }
+
+@media (min-width: 1340px) {
+  .home .home-container h2 {
+    text-align: initial !important; } }
+
+@media (min-width: 768px) {
+  .home {
+    margin-top: 70px; }
+    .home .home-container h2 {
+      font-size: 60px;
+      line-height: 48px; }
+      .home .home-container h2 span {
+        font-size: 40px;
+        line-height: 40px; } }
+
+@media (min-width: 590px) {
+  .home .home-container .arrow-container {
+    margin-top: 31px !important; } }
+
+.animate .calendar {
+  animation-name: calendar; }
+
+.animate .placeholder {
+  animation-name: place; }
+
+.animate .mail {
+  animation-name: mail; }
+
+.animate .like {
+  animation-name: like; }
+
+.animate .printer {
+  animation-name: printer; }
+
+.animate .empty-inbox {
+  animation-name: inbox; }
+
+.animate .photo-camera {
+  animation-name: photo; }
 
 @keyframes photo {
   0% {

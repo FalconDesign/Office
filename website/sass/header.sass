@@ -1,10 +1,20 @@
 @import mixin-var.sass
 
-header
+
+
+
+.main-header
   height: 70px
   width: 100%
-  transition: all 300ms linear
+  transition: all 200ms linear
+  overflow: hidden
 
+
+  &.opened-mobile-header
+      height: 305px
+      nav
+        .main-nav
+          display: block
   nav
     position: relative
     background-color: $main-dark
@@ -58,9 +68,9 @@ header
         height: 5px
         background-color: white
         margin-top: 5px
-        transition: all 200ms linear
+        transition: transform 200ms linear
 
-      &:hover
+      &.closed-burger
         span:first-child
           margin-left: 10px
           transform: rotate(-45deg) translate(-15px, 0)
@@ -73,10 +83,13 @@ header
 // Media Queries
 
 @media #{$desktop}
-  header
+  .main-header
     background-color: $main-dark
-    height: 70px
+    height: 71px !important
     width: 100%
+    position: fixed
+    z-index: 99
+    top: 0
 
     nav
       display: flex
@@ -93,7 +106,7 @@ header
 
       .main-nav
         max-width: 509px
-        display: flex
+        display: flex !important
         justify-content: space-between
         font-size: 16px
         a:link
