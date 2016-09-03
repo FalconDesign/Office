@@ -1,13 +1,17 @@
 "use strict";
 
 
-$(() => {
+  $(() => {
 
-  $('#cover').fadeOut(1000);
 
   let $window = $(window);
   let burger = $('.burger');
   let header = $('.main-header');
+
+
+  $window.on('load', () => {
+      $('#cover').fadeOut(1000);
+  });
 
   // Function for responsive mibile nav-bar;
 
@@ -148,6 +152,5 @@ $(() => {
     };
 
   });
-
 
 });

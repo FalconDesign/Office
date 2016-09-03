@@ -2,11 +2,13 @@
 
 $(function () {
 
-  $('#cover').fadeOut(1000);
-
   var $window = $(window);
   var burger = $('.burger');
   var header = $('.main-header');
+
+  $window.on('load', function () {
+    $('#cover').fadeOut(1000);
+  });
 
   // Function for responsive mibile nav-bar;
 
@@ -41,7 +43,7 @@ $(function () {
         team = $('.team'),
         great = $('.great'),
         connect = $('.connect'),
-        windowScroll = $(undefined).scrollTop();
+        windowScroll = $(window).scrollTop();
 
     var windowsize = $window.width();
     if (windowsize < 678) {
@@ -73,7 +75,7 @@ $(function () {
 
   $window.on('scroll', function () {
 
-    var windowScroll = $(undefined).scrollTop();
+    var windowScroll = $(window).scrollTop();
     var skills = $('.skill-container');
     var one = $('.one');
     var two = $('.two');
