@@ -1,6 +1,9 @@
 "use strict";
 
+
 $(() => {
+
+  $('#cover').fadeOut(1000);
 
   let $window = $(window);
   let burger = $('.burger');

@@ -2,9 +2,11 @@
 
 $(function () {
 
-  var $window   = $(window);
-  var burger    = $('.burger');
-  var header    = $('.main-header');
+  $('#cover').fadeOut(1000);
+
+  var $window = $(window);
+  var burger = $('.burger');
+  var header = $('.main-header');
 
   // Function for responsive mibile nav-bar;
 
@@ -27,26 +29,25 @@ $(function () {
     $('html, body').animate({ scrollTop: $this.offset().top - 70 }, 500);
   });
 
-
   // Function check the width & Paralax Effect
 
   var parallax = function parallax() {
-    var section   = ['.theme', '.pricing', '.team', '.great', '.connect'];
-    var item      = section;
+    var section = ['.theme', '.pricing', '.team', '.great', '.connect'];
+    var item = section;
 
 
-    var theme         = $('.theme'),
-        pricing       = $('.pricing'),
-        team          = $('.team'),
-        great         = $('.great'),
-        connect       = $('.connect'),
-        windowScroll  = $(window).scrollTop(),
-        windowsize    = $window.width();
+    var theme = $('.theme'),
+        pricing = $('.pricing'),
+        team = $('.team'),
+        great = $('.great'),
+        connect = $('.connect'),
+        windowScroll = $(undefined).scrollTop();
 
-    if (windowsize < 1340) {
+    var windowsize = $window.width();
+    if (windowsize < 678) {
       $('' + item).css({ backgroundPosition: 'center center' });
       return;
-    };
+    }
 
     var bgVertical = new Map();
 
@@ -72,12 +73,12 @@ $(function () {
 
   $window.on('scroll', function () {
 
-    var windowScroll  = $(window).scrollTop();
-    var skills        = $('.skill-container');
-    var one           = $('.one');
-    var two           = $('.two');
-    var medFirst      = $('.med-first');
-    var medSecond     = $('.med-second');
+    var windowScroll = $(undefined).scrollTop();
+    var skills = $('.skill-container');
+    var one = $('.one');
+    var two = $('.two');
+    var medFirst = $('.med-first');
+    var medSecond = $('.med-second');
 
     if (windowScroll > skills.offset().top - $window.height()) {
 
@@ -107,10 +108,10 @@ $(function () {
 
     button.click(function (e) {
 
-      var $this       = $(e.currentTarget),
-          spinner     = '<div class="loader">Loading...</div>',
-          newfolder   = $this.data('folder'),
-          newHTML     = 'website/app/load-portfolio/' + newfolder + '.html',
+      var $this = $(e.currentTarget),
+          spinner = '<div class="loader">Loading...</div>',
+          newfolder = $this.data('folder'),
+          newHTML = 'website/app/load-portfolio/' + newfolder + '.html',
           loadProject = $('.project-load');
 
       loadProject.fadeOut(300, function () {
