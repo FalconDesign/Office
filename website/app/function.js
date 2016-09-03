@@ -2,12 +2,17 @@
 
 $(function () {
 
-  var $window = $(window);
-  var burger = $('.burger');
-  var header = $('.main-header');
+  var $window   = $(window);
+  var burger    = $('.burger');
+  var header    = $('.main-header');
 
   $window.on('load', function () {
     $('#cover').fadeOut(1000);
+
+    // Animated rotating icons in section 'home';
+
+    var iconContainer = $('.icon-container');
+    iconContainer.addClass('animate');
   });
 
   // Function for responsive mibile nav-bar;
@@ -16,11 +21,6 @@ $(function () {
     $(e.currentTarget).toggleClass('closed-burger');
     header.toggleClass('opened-mobile-header');
   });
-
-  // Animated rotating icons in section 'home';
-
-  var iconContainer = $('.icon-container');
-  iconContainer.addClass('animate');
 
   // Function for smooth scroll to an anchor
 
@@ -33,17 +33,17 @@ $(function () {
 
   // Function check the width & Paralax Effect
 
-  var parallax = function parallax() {
+  var parallax  = function parallax() {
     var section = ['.theme', '.pricing', '.team', '.great', '.connect'];
-    var item = section;
+    var item    = section;
 
 
-    var theme = $('.theme'),
-        pricing = $('.pricing'),
-        team = $('.team'),
-        great = $('.great'),
-        connect = $('.connect'),
-        windowScroll = $(window).scrollTop();
+    var theme         = $('.theme'),
+        pricing       = $('.pricing'),
+        team          = $('.team'),
+        great         = $('.great'),
+        connect       = $('.connect'),
+        windowScroll  = $(undefined).scrollTop();
 
     var windowsize = $window.width();
     if (windowsize < 678) {
@@ -75,12 +75,12 @@ $(function () {
 
   $window.on('scroll', function () {
 
-    var windowScroll = $(window).scrollTop();
-    var skills = $('.skill-container');
-    var one = $('.one');
-    var two = $('.two');
-    var medFirst = $('.med-first');
-    var medSecond = $('.med-second');
+    var windowScroll  = $(undefined).scrollTop();
+    var skills        = $('.skill-container');
+    var one           = $('.one');
+    var two           = $('.two');
+    var medFirst      = $('.med-first');
+    var medSecond     = $('.med-second');
 
     if (windowScroll > skills.offset().top - $window.height()) {
 
@@ -110,11 +110,11 @@ $(function () {
 
     button.click(function (e) {
 
-      var $this = $(e.currentTarget),
-          spinner = '<div class="loader">Loading...</div>',
-          newfolder = $this.data('folder'),
-          newHTML = 'website/app/load-portfolio/' + newfolder + '.html',
-          loadProject = $('.project-load');
+      var $this        = $(e.currentTarget),
+          spinner      = '<div class="loader">Loading...</div>',
+          newfolder    = $this.data('folder'),
+          newHTML      = 'website/app/load-portfolio/' + newfolder + '.html',
+          loadProject  = $('.project-load');
 
       loadProject.fadeOut(300, function () {
         loadProject.fadeIn().html(spinner).load(newHTML);

@@ -11,6 +11,12 @@
 
   $window.on('load', () => {
       $('#cover').fadeOut(1000);
+      
+      // Animated rotating icons in section 'home';
+
+      let iconContainer = $('.icon-container');
+      iconContainer.addClass('animate');
+
   });
 
   // Function for responsive mibile nav-bar;
@@ -20,11 +26,6 @@
       header.toggleClass('opened-mobile-header');
 
   });
-
-  // Animated rotating icons in section 'home';
-
-  let iconContainer = $('.icon-container');
-  iconContainer.addClass('animate');
 
 
   // Function for smooth scroll to an anchor
