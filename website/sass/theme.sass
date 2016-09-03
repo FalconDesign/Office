@@ -21,23 +21,35 @@
       font-weight: 300
       margin-bottom: 10px
 
-    button:nth-child(2)
-      margin-right: 9px
-      +button()
-      background-color: $button-green
-      box-shadow: 0 15px 10px -5px fade-out(black, 0.3)
-      transition: all 100ms linear
-      &:hover
+    div:nth-child(2)
+      display: inline-block
+      padding-bottom: 10px
+      cursor: pointer
+      button
+        margin-right: 9px
+        +button()
+        background-color: $button-green
+        box-shadow: 0 15px 10px -5px fade-out(black, 0.3)
+        transition: all 100ms linear
+        &:active
+          background-color: fade-out(gray, .7)
+      &:hover button
         transform: translate(0, -10px)
         box-shadow: 0 35px 15px -15px fade-out(black, 0.6)
-    button:last-child
-      margin-right: 9px
-      +button()
-      background-color: $price-green
-      box-shadow: 0 15px 10px -5px fade-out(black, 0.3)
-      transition: all 100ms linear
-      margin-top: 15px
-      &:hover
+    div:last-child
+      display: inline-block
+      padding-bottom: 10px
+      cursor: pointer
+      button
+        margin-right: 9px
+        +button()
+        background-color: $price-green
+        box-shadow: 0 15px 10px -5px fade-out(black, 0.3)
+        transition: all 100ms linear
+        margin-top: 15px
+        &:active
+          background-color: fade-out(gray, .7)
+      &:hover button
         transform: translate(0, -10px)
         box-shadow: 0 35px 15px -15px fade-out(black, 0.6)
 

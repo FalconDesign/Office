@@ -30,11 +30,11 @@ $(() => {
   });
 
 
-
-
   // Function check the width & Paralax Effect
 
   let parallax = () => {
+    let section = ['.theme', '.pricing', '.team', '.great', '.connect'];
+    let [...item] = section;
 
     let theme        = $('.theme'),
         pricing      = $('.pricing'),
@@ -43,34 +43,33 @@ $(() => {
         connect      = $('.connect'),
         windowScroll = $(this).scrollTop();
 
+    let windowsize = $window.width();
+    if (windowsize < 678 ) {
+      $(`${item}`).css({backgroundPosition: 'center center'});
+      return;
+    }
+
+    let bgVertical = new Map();
+
+    bgVertical.set(theme, 189.6);
+    bgVertical.set(pricing, 340);
+    bgVertical.set(team, 697.6);
+    bgVertical.set(great, 962);
+    bgVertical.set(connect, 1169.4);
+
     if (windowScroll > theme.offset().top - $window.height()) {
 
-    theme.css({'background-position':'center '+ (189.6 + (-windowScroll / 5)) +'px'});
-
-    pricing.css({'background-position':'center '+ (340 + (-windowScroll / 5)) +'px'});
-
-    team.css({'background-position':'center '+ (697.6 + (-windowScroll / 5)) +'px'});
-
-    great.css({'background-position':'center '+ (962 + (-windowScroll / 5)) +'px'});
-
-    connect.css({'background-position':'center '+ (1169.4 + (-windowScroll / 5)) +'px'});
+      bgVertical.forEach( (value, key) => {
+        key.css({backgroundPosition: 'center '+ (value + (-windowScroll / 5)) +'px'});
+      });
 
       };
   };
 
 
+    $window.on('scroll', parallax);
 
-  let checkWidth = () => {
-        let windowsize = $window.width();
-
-        if (windowsize >= 678) {
-          $window.on('scroll', parallax)
-        };
-    };
-
-    checkWidth();
-
-    $window.resize(checkWidth);
+    $window.resize(parallax);
 
 
   // Skill container loading and counter
@@ -104,7 +103,7 @@ $(() => {
     animateCounter(two, 90);
 
   };
-})
+});
 
 
   // AJAX portfolio

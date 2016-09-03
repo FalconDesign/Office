@@ -476,39 +476,51 @@
       font-size: 40px;
       font-weight: 300;
       margin-bottom: 10px; }
-    .theme .wrap button:nth-child(2) {
-      margin-right: 9px;
-      width: 131px;
-      height: 43px;
-      border-radius: 5px;
-      border: 0;
-      color: white;
-      cursor: pointer;
-      margin-left: -4px;
-      background-color: #b0cd3b;
-      box-shadow: 0 15px 10px -5px rgba(0, 0, 0, 0.7);
-      transition: all 100ms linear; }
-      .theme .wrap button:nth-child(2):focus {
-        outline: 0; }
-      .theme .wrap button:nth-child(2):hover {
+    .theme .wrap div:nth-child(2) {
+      display: inline-block;
+      padding-bottom: 10px;
+      cursor: pointer; }
+      .theme .wrap div:nth-child(2) button {
+        margin-right: 9px;
+        width: 131px;
+        height: 43px;
+        border-radius: 5px;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        margin-left: -4px;
+        background-color: #b0cd3b;
+        box-shadow: 0 15px 10px -5px rgba(0, 0, 0, 0.7);
+        transition: all 100ms linear; }
+        .theme .wrap div:nth-child(2) button:focus {
+          outline: 0; }
+        .theme .wrap div:nth-child(2) button:active {
+          background-color: rgba(128, 128, 128, 0.3); }
+      .theme .wrap div:nth-child(2):hover button {
         transform: translate(0, -10px);
         box-shadow: 0 35px 15px -15px rgba(0, 0, 0, 0.4); }
-    .theme .wrap button:last-child {
-      margin-right: 9px;
-      width: 131px;
-      height: 43px;
-      border-radius: 5px;
-      border: 0;
-      color: white;
-      cursor: pointer;
-      margin-left: -4px;
-      background-color: #1bbc9d;
-      box-shadow: 0 15px 10px -5px rgba(0, 0, 0, 0.7);
-      transition: all 100ms linear;
-      margin-top: 15px; }
-      .theme .wrap button:last-child:focus {
-        outline: 0; }
-      .theme .wrap button:last-child:hover {
+    .theme .wrap div:last-child {
+      display: inline-block;
+      padding-bottom: 10px;
+      cursor: pointer; }
+      .theme .wrap div:last-child button {
+        margin-right: 9px;
+        width: 131px;
+        height: 43px;
+        border-radius: 5px;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        margin-left: -4px;
+        background-color: #1bbc9d;
+        box-shadow: 0 15px 10px -5px rgba(0, 0, 0, 0.7);
+        transition: all 100ms linear;
+        margin-top: 15px; }
+        .theme .wrap div:last-child button:focus {
+          outline: 0; }
+        .theme .wrap div:last-child button:active {
+          background-color: rgba(128, 128, 128, 0.3); }
+      .theme .wrap div:last-child:hover button {
         transform: translate(0, -10px);
         box-shadow: 0 35px 15px -15px rgba(0, 0, 0, 0.4); }
   @media (min-width: 768px) {
@@ -1192,7 +1204,8 @@
 
 .photo-stream {
   background-color: #282a2e;
-  padding-bottom: 66px; }
+  padding-bottom: 66px;
+  text-align: center; }
   .photo-stream .wrap {
     margin: 0 auto;
     width: 100%;
@@ -1234,8 +1247,10 @@
       flex-wrap: wrap; }
 
 @media (min-width: 768px) {
-  .photo-stream .wrap {
-    justify-content: space-between; } }
+  .photo-stream {
+    text-align: initial; }
+    .photo-stream .wrap {
+      justify-content: space-between; } }
 
 .usual {
   background-color: #45372f;

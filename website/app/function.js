@@ -21,48 +21,52 @@ $(function () {
   // Function for smooth scroll to an anchor
 
   var scroll = $('.scroll');
-
   scroll.on('click', function (e) {
     var $this = $(e.currentTarget.hash);
     e.preventDefault();
     $('html, body').animate({ scrollTop: $this.offset().top - 70 }, 500);
   });
 
+
   // Function check the width & Paralax Effect
 
   var parallax = function parallax() {
+    var section   = ['.theme', '.pricing', '.team', '.great', '.connect'];
+    var item      = section;
+
 
     var theme         = $('.theme'),
         pricing       = $('.pricing'),
         team          = $('.team'),
         great         = $('.great'),
         connect       = $('.connect'),
-        windowScroll  = $(this).scrollTop();
+        windowScroll  = $(window).scrollTop(),
+        windowsize    = $window.width();
+
+    if (windowsize < 1340) {
+      $('' + item).css({ backgroundPosition: 'center center' });
+      return;
+    };
+
+    var bgVertical = new Map();
+
+    bgVertical.set(theme, 189.6);
+    bgVertical.set(pricing, 340);
+    bgVertical.set(team, 697.6);
+    bgVertical.set(great, 962);
+    bgVertical.set(connect, 1169.4);
 
     if (windowScroll > theme.offset().top - $window.height()) {
 
-      theme.css({ 'background-position': 'center ' + (189.6 + -windowScroll / 5) + 'px' });
-
-      pricing.css({ 'background-position': 'center ' + (340 + -windowScroll / 5) + 'px' });
-
-      team.css({ 'background-position': 'center ' + (697.6 + -windowScroll / 5) + 'px' });
-
-      great.css({ 'background-position': 'center ' + (962 + -windowScroll / 5) + 'px' });
-
-      connect.css({ 'background-position': 'center ' + (1169.4 + -windowScroll / 5) + 'px' });
+      bgVertical.forEach(function (value, key) {
+        key.css({ backgroundPosition: 'center ' + (value + -windowScroll / 5) + 'px' });
+      });
     };
   };
 
-  var checkWidth = function checkWidth() {
-    var windowsize = $window.width();
-    if (windowsize >= 678) {
-      $window.on('scroll', parallax);
-    };
-  };
+  $window.on('scroll', parallax);
 
-  checkWidth();
-
-  $window.resize(checkWidth);
+  $window.resize(parallax);
 
   // Skill container loading and counter
 
@@ -129,7 +133,6 @@ $(function () {
 
       $this.siblings().removeClass('active');
       $this.addClass('active');
-
     };
   });
 });

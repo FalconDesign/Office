@@ -27,7 +27,8 @@
 
 .photo-stream {
   background-color: #282a2e;
-  padding-bottom: 66px; }
+  padding-bottom: 66px;
+  text-align: center; }
   .photo-stream .wrap {
     margin: 0 auto;
     width: 100%;
@@ -69,5 +70,7 @@
       flex-wrap: wrap; }
 
 @media (min-width: 768px) {
-  .photo-stream .wrap {
-    justify-content: space-between; } }
+  .photo-stream {
+    text-align: initial; }
+    .photo-stream .wrap {
+      justify-content: space-between; } }
